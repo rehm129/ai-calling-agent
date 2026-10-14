@@ -1,0 +1,17 @@
+{
+  "name": "ai-calling-agent",
+  "version": "1.0.0",
+  "description": "Local AI Voice Calling Agent — PearlCare Dental Clinic",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:piper": "node scripts/setup-piper.js",
+    "install:all": "npm run install:backend && npm run install:piper",
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && node serve.js",
+    "start:n8n": "n8n start",
+    "start:ollama": "ollama serve",
+    "test:health": "node scripts/test-health.js"
+  },
+  "keywords": ["ai", "voice", "agent", "dental", "ollama", "whisper", "piper"],
+  "license": "MIT"
+}
